@@ -1,0 +1,20 @@
+# Ignore compiled class files
+*.class
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore IDE specific files
+*.iml
+.idea/
+*.classpath
+*.project
+.settings/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore logs
+*.log
