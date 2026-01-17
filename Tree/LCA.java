@@ -2,18 +2,19 @@ package tree;
 
 import java.util.*;
 
-class Node {
-    int data;
-    Node right, left;
+public class LCA {
 
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
+    static class Node {
+        int data;
+        Node right;
+        Node left;
+
+        Node(int var1) {
+            this.data = var1;
+            this.left = null;
+            this.right = null;
+        }
     }
-}
-
-public class Input {
 
     public static Node buildTree(int arr[], int i) {
         if (i >= arr.length || arr[i] == -1)
