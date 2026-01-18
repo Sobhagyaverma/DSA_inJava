@@ -44,6 +44,31 @@ public class LCA {
         }
     }
 
+    public static Node lowestCA(Node root, int p, int q) {
+        if (root == null)
+            return null;
+        if (root.data == q || root.data == p)
+            return root;
+        Node left = null;
+        Node right = null;
+
+        if (root.left != null) {
+            left = lowestCA(root.left, p, q);
+        }
+
+        if (root.right != null) {
+            right = lowestCA(root.right, p, q);
+        }
+
+        if (right != null && left != null)
+            return root;
+        else if (left != null)
+            return left;
+        else
+            return right;
+
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -59,10 +84,15 @@ public class LCA {
 
         Node root = buildTree(arr, 0);
 
-        System.out.print("\nLevelOrder Traversal of your tree: ");
-        levelOrder(root);
         System.out.println();
 
+        System.out.println("Enter the value of p and q");
+
+        int p = sc.nextInt();
+        int q = sc.nextInt();
+
+        Node ans = lowestCA(root, p, q);
+        System.out.println(ans.data);
         sc.close();
     }
 }
