@@ -3,13 +3,21 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 9: Bitwise AND of Numbers Range
+ * Problem 9: Bitwise AND of Numbers Range (LeetCode 201)
  * 
- * Input Format:
- * Left and Right (integers).
+ * Problem Statement:
+ * Given two integers left and right that represent the range [left, right],
+ * return the bitwise AND of all numbers in this range, inclusive.
  * 
- * Output Format:
- * Bitwise AND of all numbers in the range [left, right].
+ * Sample Input:
+ * 5 7
+ * Sample Output:
+ * Result: 4 (5 & 6 & 7 = 101 & 110 & 111 = 100)
+ * 
+ * Sample Input:
+ * 0 0
+ * Sample Output:
+ * Result: 0
  * 
  * Approach: Common Prefix
  * For a range of numbers, the bits to the right of the first differing bit

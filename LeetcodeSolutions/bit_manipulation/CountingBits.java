@@ -4,14 +4,22 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 /**
- * Problem 6: Counting Bits
+ * Problem 6: Counting Bits (LeetCode 338)
  * 
- * Input Format:
- * An integer n.
+ * Problem Statement:
+ * Given an integer n, return an array ans of length n + 1 such that for each i
+ * (0 <= i <= n),
+ * ans[i] is the number of 1's in the binary representation of i.
  * 
- * Output Format:
- * An array of size n+1 where ans[i] is the number of 1s in the binary
- * representation of i.
+ * Sample Input:
+ * 2
+ * Sample Output:
+ * [0, 1, 1] (0:0, 1:1, 2:10)
+ * 
+ * Sample Input:
+ * 5
+ * Sample Output:
+ * [0, 1, 1, 2, 1, 2] (0:0, 1:1, 2:10, 3:11, 4:100, 5:101)
  * 
  * Approach: Dynamic Programming + Bitwise
  * Relation: bits[i] = bits[i / 2] + (i % 2)

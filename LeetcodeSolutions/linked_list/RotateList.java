@@ -5,11 +5,22 @@ import java.util.Scanner;
 /**
  * Problem 13: Rotate List (LeetCode 61)
  * 
- * Input Format:
- * Number of nodes n, values, and rotation factor k.
+ * Problem Statement:
+ * Given the head of a linked list, rotate the list to the right by k places.
  * 
- * Output Format:
- * Rotated linked list.
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * 2
+ * Sample Output:
+ * 4 -> 5 -> 1 -> 2 -> 3 -> null
+ * 
+ * Sample Input:
+ * 3
+ * 0 1 2
+ * 4
+ * Sample Output:
+ * 2 -> 0 -> 1 -> null
  * 
  * Approach: Link Tail to Head
  * 1. Find the length and the tail node.
@@ -18,10 +29,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It solves the problem in a single traversal (to length) and a partial second
- * traversal.
  */
 
 class ListNode {

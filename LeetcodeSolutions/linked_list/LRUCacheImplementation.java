@@ -6,11 +6,23 @@ import java.util.Scanner;
 /**
  * Problem 24: LRU Cache (LeetCode 146)
  * 
- * Input Format:
- * Cache capacity, then operations: get(key) or put(key, value).
+ * Problem Statement:
+ * Design a data structure that follows the constraints of a Least Recently Used
+ * (LRU) cache.
+ * Implement the LRUCache class:
+ * - LRUCache(int capacity) Initialize the LRU cache with positive size
+ * capacity.
+ * - int get(int key) Return the value of the key if it exists, otherwise return
+ * -1.
+ * - void put(int key, int value) Update the value of the key if it exists.
+ * Otherwise, add the key-value pair to the cache.
+ * If the number of keys exceeds the capacity, evict the least recently used
+ * key.
  * 
- * Output Format:
- * Results of get operations.
+ * Sample Input:
+ * put(1, 1), put(2, 2), get(1), put(3, 3), get(2)
+ * Sample Output:
+ * 1, -1 (2 was evicted)
  * 
  * Approach: HashMap + Doubly Linked List
  * 1. HashMap stores key -> node mapping for O(1) access.
@@ -21,17 +33,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(1) for both get and put.
  * Space Complexity: O(capacity)
- * 
- * Why Optimal:
- * It achieves O(1) time for all operations using the combination of HashMap and
- * DLL.
- * 
- * Edge Cases Handled:
- * - Empty cache
- * - Single element cache
- * - Capacity = 1
- * - Updating existing keys
- * - Evicting least recently used
  */
 
 class DLLNode {

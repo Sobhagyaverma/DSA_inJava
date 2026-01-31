@@ -5,11 +5,25 @@ import java.util.Scanner;
 /**
  * Problem 22: Partition List (LeetCode 86)
  * 
- * Input Format:
- * Number of nodes n, values, and partition value x.
+ * Problem Statement:
+ * Given the head of a linked list and a value x, partition it such that all
+ * nodes less than x come before nodes greater than or equal to x.
+ * You should preserve the original relative order of the nodes in each of the
+ * two partitions.
  * 
- * Output Format:
- * Modified linked list with nodes < x before nodes >= x.
+ * Sample Input:
+ * 6
+ * 1 4 3 2 5 2
+ * 3
+ * Sample Output:
+ * 1 -> 2 -> 2 -> 4 -> 3 -> 5 -> null
+ * 
+ * Sample Input:
+ * 2
+ * 2 1
+ * 2
+ * Sample Output:
+ * 1 -> 2 -> null
  * 
  * Approach: Two Separate Lists
  * 1. Create two separate lists: one for nodes < x, one for nodes >= x.
@@ -18,9 +32,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It partitions the list in a single pass while maintaining relative order.
  */
 
 class ListNode {

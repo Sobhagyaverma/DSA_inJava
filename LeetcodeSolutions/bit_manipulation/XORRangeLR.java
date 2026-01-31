@@ -5,11 +5,19 @@ import java.util.Scanner;
 /**
  * Problem 19: Find XOR of Given Range [L, R]
  * 
- * Input Format:
- * Integers L and R.
+ * Problem Statement:
+ * Given two integers L and R, calculate the XOR sum of all integers in the
+ * range [L, R].
  * 
- * Output Format:
- * L ^ (L+1) ^ ... ^ R.
+ * Sample Input:
+ * 4 8
+ * Sample Output:
+ * Result: 8
+ * 
+ * Sample Input:
+ * 3 5
+ * Sample Output:
+ * Result: 2
  * 
  * Approach: Prefix XOR property
  * XOR(L, R) = XOR(1, R) ^ XOR(1, L-1).

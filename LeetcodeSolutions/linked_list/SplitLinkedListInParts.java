@@ -5,11 +5,20 @@ import java.util.Scanner;
 /**
  * Problem 16: Split Linked List in Parts (LeetCode 725)
  * 
- * Input Format:
- * Number of nodes n, values, and k (number of parts).
+ * Problem Statement:
+ * Given the head of a singly linked list and an integer k, split the linked
+ * list into k consecutive linked list parts.
+ * The length of each part should be as equal as possible.
  * 
- * Output Format:
- * Arrays of heads for each part.
+ * Sample Input:
+ * Head: 1-2-3, k=5
+ * Sample Output:
+ * [[1],[2],[3],[],[]]
+ * 
+ * Sample Input:
+ * Head: 1-2-3-4-5-6-7-8-9-10, k=3
+ * Sample Output:
+ * [[1,2,3,4],[5,6,7],[8,9,10]]
  * 
  * Approach: Math and Pointer Modification
  * 1. Find total length of the list.
@@ -19,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n + k)
  * Space Complexity: O(k) for the result array.
- * 
- * Why Optimal:
- * It splits the list in a single pass after calculating length.
  */
 
 class ListNode {

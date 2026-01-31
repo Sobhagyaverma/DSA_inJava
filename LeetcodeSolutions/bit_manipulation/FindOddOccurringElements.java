@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 24: Find the Element That Appears Odd Number of Times
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of n elements, every element appears an even number of times
+ * except for one element. Find that single odd-occurring element.
  * 
- * Output Format:
- * The element that appears an odd number of times.
+ * Sample Input:
+ * 5
+ * 1 2 3 2 1
+ * Sample Output:
+ * Odd Occurring: 3
+ * 
+ * Sample Input:
+ * 3
+ * 8 8 8
+ * Sample Output:
+ * Odd Occurring: 8
  * 
  * Approach: XOR
  * XOR of all elements is result.

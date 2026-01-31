@@ -5,12 +5,23 @@ import java.util.Scanner;
 /**
  * Problem 20: Linked List Cycle II (LeetCode 142)
  * 
- * Input Format:
- * Number of nodes n, values, and cycle position (index where tail connects, -1
- * for none).
+ * Problem Statement:
+ * Given the head of a linked list, return the node where the cycle begins. If
+ * there is no cycle, return null.
  * 
- * Output Format:
- * The node where the cycle begins, or null if no cycle.
+ * Sample Input:
+ * 4
+ * 3 2 0 -4
+ * 1
+ * Sample Output:
+ * Cycle begins at node with value: 2
+ * 
+ * Sample Input:
+ * 1
+ * 1
+ * -1
+ * Sample Output:
+ * No cycle
  * 
  * Approach: Floyd's Cycle Detection + Math
  * 1. Use slow/fast pointers to detect if a cycle exists.
@@ -19,9 +30,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It finds the cycle start in linear time using constant extra space.
  */
 
 class ListNode {

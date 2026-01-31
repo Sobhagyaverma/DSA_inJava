@@ -5,11 +5,22 @@ import java.util.Scanner;
 /**
  * Problem 5: Remove Linked List Elements (LeetCode 203)
  * 
- * Input Format:
- * Number of nodes n, values, and the target value to remove.
+ * Problem Statement:
+ * Given the head of a linked list and an integer val, remove all the nodes of
+ * the linked list that has Node.val == val, and return the new head.
  * 
- * Output Format:
- * Modified linked list.
+ * Sample Input:
+ * 7
+ * 1 2 6 3 4 5 6
+ * 6
+ * Sample Output:
+ * 1 -> 2 -> 3 -> 4 -> 5 -> null
+ * 
+ * Sample Input:
+ * 0
+ * 1
+ * Sample Output:
+ * null
  * 
  * Approach: Iterative with Dummy Node
  * We use a dummy node to handle cases where the head itself needs to be
@@ -20,9 +31,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It removes all target elements in a single pass using constant extra space.
  */
 
 class ListNode {

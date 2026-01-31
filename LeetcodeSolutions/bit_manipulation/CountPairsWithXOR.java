@@ -7,11 +7,23 @@ import java.util.Map;
 /**
  * Problem 14: Count Pairs with Given XOR
  * 
- * Input Format:
- * n, array elements, then target XOR value k.
+ * Problem Statement:
+ * Given an array nums and an integer k, count the number of pairs (i, j) such
+ * that i < j and nums[i] ^ nums[j] = k.
  * 
- * Output Format:
- * Number of pairs (i, j) such that nums[i] ^ nums[j] = k.
+ * Sample Input:
+ * 4
+ * 1 2 1 2
+ * 0
+ * Sample Output:
+ * Pairs: 2 ([1,1] and [2,2])
+ * 
+ * Sample Input:
+ * 4
+ * 5 4 10 15
+ * 1
+ * Sample Output:
+ * Pairs: 1 ([4,5])
  * 
  * Approach: Hashing
  * a ^ b = k => b = a ^ k.

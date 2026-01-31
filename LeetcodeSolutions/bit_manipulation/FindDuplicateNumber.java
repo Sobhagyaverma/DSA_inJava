@@ -3,13 +3,24 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 5: Find the Duplicate Number
+ * Problem 5: Find the Duplicate Number (LeetCode 287)
  * 
- * Input Format:
- * n, then n+1 integers in range [1, n].
+ * Problem Statement:
+ * Given an array of integers nums containing n + 1 integers where each integer
+ * is in the range [1, n] inclusive.
+ * There is only one repeated number in nums, return this repeated number.
  * 
- * Output Format:
- * The duplicate number.
+ * Sample Input:
+ * 5
+ * 1 3 4 2 2
+ * Sample Output:
+ * Duplicate: 2
+ * 
+ * Sample Input:
+ * 5
+ * 3 1 3 4 2
+ * Sample Output:
+ * Duplicate: 3
  * 
  * Approach: Bit Counting
  * For each bit from 0 to 31, count how many numbers in [1, n] have that bit

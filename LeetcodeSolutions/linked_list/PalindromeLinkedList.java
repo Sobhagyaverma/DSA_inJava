@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 7: Palindrome Linked List (LeetCode 234)
  * 
- * Input Format:
- * Number of nodes n, followed by n values.
+ * Problem Statement:
+ * Given the head of a singly linked list, return true if it is a palindrome or
+ * false otherwise.
  * 
- * Output Format:
- * Boolean indicating if the list is a palindrome.
+ * Sample Input:
+ * 4
+ * 1 2 2 1
+ * Sample Output:
+ * Palindrome: true
+ * 
+ * Sample Input:
+ * 2
+ * 1 2
+ * Sample Output:
+ * Palindrome: false
  * 
  * Approach: Reverse Second Half
  * 1. Use slow/fast pointers to find the middle.
@@ -18,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It checks the palindrome property in linear time using constant extra space.
  */
 
 class ListNode {

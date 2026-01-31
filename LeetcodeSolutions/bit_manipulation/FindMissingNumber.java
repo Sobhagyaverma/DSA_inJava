@@ -3,13 +3,23 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 4: Find the Missing Number
+ * Problem 4: Find the Missing Number (LeetCode 268)
  * 
- * Input Format:
- * n, then n integers from 0 to n with one missing.
+ * Problem Statement:
+ * Given an array nums containing n distinct numbers in the range [0, n], return
+ * the only number in the range that is missing from the array.
  * 
- * Output Format:
- * The missing number.
+ * Sample Input:
+ * 3
+ * 3 0 1
+ * Sample Output:
+ * missing number: 2
+ * 
+ * Sample Input:
+ * 2
+ * 0 1
+ * Sample Output:
+ * missing number: 2
  * 
  * Approach: XOR
  * XOR of all elements in array ^ XOR of all numbers from 0 to n.

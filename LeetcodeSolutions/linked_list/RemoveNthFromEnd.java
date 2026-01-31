@@ -5,12 +5,23 @@ import java.util.Scanner;
 /**
  * Problem 2: Remove Nth Node From End of List (LeetCode 19)
  * 
- * Input Format:
- * Number of nodes n, followed by n node values, and then the value of k (nth
- * from end).
+ * Problem Statement:
+ * Given the head of a linked list, remove the nth node from the end of the list
+ * and return its head.
  * 
- * Output Format:
- * The modified linked list.
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * 2
+ * Sample Output:
+ * 1 -> 2 -> 3 -> 5 -> null
+ * 
+ * Sample Input:
+ * 1
+ * 1
+ * 1
+ * Sample Output:
+ * null
  * 
  * Approach: Two Pointers (Slow and Fast)
  * 1. Use a dummy node to handle the case where the head is removed.
@@ -20,10 +31,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n) - Single pass
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It solves the problem in one pass without knowing the total length
- * beforehand.
  */
 
 class ListNode {

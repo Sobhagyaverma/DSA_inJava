@@ -6,11 +6,20 @@ import java.util.Scanner;
 /**
  * Problem 11: Merge K Sorted Lists (LeetCode 23)
  * 
- * Input Format:
- * Number of sorted lists k, then for each list: size and values.
+ * Problem Statement:
+ * You are given an array of k linked-lists lists, each linked-list is sorted in
+ * ascending order.
+ * Merge all the linked-lists into one sorted linked-list and return it.
  * 
- * Output Format:
- * Single merged sorted linked list.
+ * Sample Input:
+ * lists = [[1,4,5],[1,3,4],[2,6]]
+ * Sample Output:
+ * 1->1->2->3->4->4->5->6
+ * 
+ * Sample Input:
+ * lists = []
+ * Sample Output:
+ * null
  * 
  * Approach: Min-Priority Queue
  * 1. Add the head of each non-empty list to a min-heap.
@@ -19,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(N log k) where N is total nodes.
  * Space Complexity: O(k) for the priority queue.
- * 
- * Why Optimal:
- * It efficiently finds the smallest element among k lists in log(k) time.
  */
 
 class ListNode {

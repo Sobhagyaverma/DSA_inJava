@@ -5,11 +5,19 @@ import java.util.Scanner;
 /**
  * Problem 23: Count Total Set Bits from 1 to N
  * 
- * Input Format:
- * Integer n.
+ * Problem Statement:
+ * Given a positive integer n, count the total number of set bits in all
+ * integers from 1 to n.
  * 
- * Output Format:
- * Total count of 1s in binary representations of all numbers from 1 to n.
+ * Sample Input:
+ * 4
+ * Sample Output:
+ * Total Set Bits: 5 (1:1, 2:10, 3:11, 4:100. Total = 1+1+2+1=5)
+ * 
+ * Sample Input:
+ * 17
+ * Sample Output:
+ * Total Set Bits: 35
  * 
  * Approach: Bitwise Position Observation
  * At bit position i (starting from 0), bits alternate between 0 and 1 every 2^i

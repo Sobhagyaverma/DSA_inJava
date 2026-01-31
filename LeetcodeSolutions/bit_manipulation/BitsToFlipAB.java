@@ -3,13 +3,21 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 20: Count Number of Bits to Flip to Convert A to B
+ * Problem 20: Count Number of Bits to Flip to Convert A to B (LeetCode 461)
  * 
- * Input Format:
- * Two integers A and B.
+ * Problem Statement:
+ * Given two integers A and B, return the number of bits you would need to flip
+ * to convert A to B.
  * 
- * Output Format:
- * Number of bits to be flipped.
+ * Sample Input:
+ * 10 20
+ * Sample Output:
+ * Flipped Bits: 4
+ * 
+ * Sample Input:
+ * 7 10
+ * Sample Output:
+ * Flipped Bits: 3
  * 
  * Approach: Hamming Distance
  * XOR A and B to get set bits where they differ, then count set bits.

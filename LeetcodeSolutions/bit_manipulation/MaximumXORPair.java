@@ -3,13 +3,23 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 8: Maximum XOR of Two Numbers in an Array
+ * Problem 8: Maximum XOR of Two Numbers in an Array (LeetCode 421)
  * 
- * Input Format:
- * n, then n integers.
+ * Problem Statement:
+ * Given an integer array nums, return the maximum result of nums[i] XOR
+ * nums[j], where 0 <= i <= j < n.
  * 
- * Output Format:
- * Maximum XOR value of any pair (nums[i], nums[j]).
+ * Sample Input:
+ * 6
+ * 3 10 5 25 2 8
+ * Sample Output:
+ * Max XOR: 28 (5 XOR 25 = 28)
+ * 
+ * Sample Input:
+ * 2
+ * 14 70
+ * Sample Output:
+ * Max XOR: 64
  * 
  * Approach: Bitwise Trie
  * We insert each number into a Trie bit by bit (from MSB to LSB).

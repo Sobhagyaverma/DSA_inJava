@@ -3,13 +3,25 @@ package bit_manipulation;
 import java.util.*;
 
 /**
- * Problem 7: Generate All Subsets (Power Set)
+ * Problem 7: Generate All Subsets (Power Set) (LeetCode 78)
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an integer array nums of unique elements, return all possible subsets
+ * (the power set).
+ * The solution set must not contain duplicate subsets. Return the solution in
+ * any order.
  * 
- * Output Format:
- * List of all possible subsets.
+ * Sample Input:
+ * 3
+ * 1 2 3
+ * Sample Output:
+ * [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
+ * 
+ * Sample Input:
+ * 1
+ * 0
+ * Sample Output:
+ * [[], [0]]
  * 
  * Approach: Iteration using Bitmask
  * A set of size n has 2^n subsets. We iterate from 0 to (2^n - 1).

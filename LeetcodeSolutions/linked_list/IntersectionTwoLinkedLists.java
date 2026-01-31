@@ -5,13 +5,20 @@ import java.util.Scanner;
 /**
  * Problem 8: Intersection of Two Linked Lists (LeetCode 160)
  * 
- * Input Format:
- * List A: skipping nodes, intersecting nodes.
- * List B: skipping nodes, intersecting nodes.
- * Intersection point val.
+ * Problem Statement:
+ * Given the heads of two singly linked-lists headA and headB, return the node
+ * at which the two lists intersect.
+ * If the two linked lists have no intersection at all, return null.
  * 
- * Output Format:
- * Value of the intersecting node.
+ * Sample Input:
+ * Intersect at 8 (Head A: 4-1-8-4-5, Head B: 5-6-1-8-4-5)
+ * Sample Output:
+ * Intersected at '8'
+ * 
+ * Sample Input:
+ * No Intersection (Head A: 2-6-4, Head B: 1-5)
+ * Sample Output:
+ * No intersection
  * 
  * Approach: Two Pointers (Switching heads)
  * We use two pointers, pA and pB, starting at heads of A and B.
@@ -20,10 +27,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(m + n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It finds the intersection in linear time without extra space (like a
- * HashSet).
  */
 
 class ListNode {

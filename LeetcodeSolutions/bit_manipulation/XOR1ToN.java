@@ -5,11 +5,18 @@ import java.util.Scanner;
 /**
  * Problem 18: Find XOR from 1 to N
  * 
- * Input Format:
- * Integer n.
+ * Problem Statement:
+ * Given an integer n, calculate the XOR sum of all integers from 1 to n.
  * 
- * Output Format:
- * 1 ^ 2 ^ 3 ^ ... ^ n.
+ * Sample Input:
+ * 4
+ * Sample Output:
+ * XOR sum: 4 (1^2^3^4 = 4)
+ * 
+ * Sample Input:
+ * 3
+ * Sample Output:
+ * XOR sum: 0 (1^2^3 = 0)
  * 
  * Approach: Pattern Observation
  * n % 4 == 0: Result = n

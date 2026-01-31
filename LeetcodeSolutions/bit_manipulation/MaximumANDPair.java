@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 25: Find Maximum AND Pair
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of integers, find the maximum bitwise AND value of any two
+ * distinct elements in the array.
  * 
- * Output Format:
- * Maximum value of (nums[i] & nums[j]) for any pair.
+ * Sample Input:
+ * 4
+ * 4 8 12 16
+ * Sample Output:
+ * Max AND: 8 (12 & 8 = 8)
+ * 
+ * Sample Input:
+ * 4
+ * 4 8 16 2
+ * Sample Output:
+ * Max AND: 0
  * 
  * Approach: Bitwise Greedy
  * We try to set bits of the result from MSB (31) to LSB (0).

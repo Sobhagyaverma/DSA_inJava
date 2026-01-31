@@ -5,12 +5,18 @@ import java.util.Scanner;
 /**
  * Problem 23: Flatten a Multilevel Doubly Linked List (LeetCode 430)
  * 
- * Input Format:
- * Simplified input: number of nodes and their values (child pointers handled
- * manually).
+ * Problem Statement:
+ * Given a doubly linked list which in addition to the next and previous
+ * pointers, it could have a child pointer,
+ * which may or may not point to a separate doubly linked list. These child
+ * lists may have one or more children of their own, and so on.
+ * Flatten the list so that all the nodes appear in a single-level, doubly
+ * linked list.
  * 
- * Output Format:
- * Flattened doubly linked list.
+ * Sample Input:
+ * Level 1: 1-2-3-4-5-6, Child of 3: 7-8-9-10, Child of 8: 11-12
+ * Sample Output:
+ * Flattened: 1-2-3-7-8-11-12-9-10-4-5-6
  * 
  * Approach: DFS with Stack or Recursion
  * 1. Traverse the list. When we encounter a child pointer, we recursively
@@ -20,9 +26,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n) for recursion stack in worst case.
- * 
- * Why Optimal:
- * It flattens the multilevel list in a single traversal.
  */
 
 class Node {

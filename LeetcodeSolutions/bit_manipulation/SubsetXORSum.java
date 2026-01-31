@@ -3,13 +3,23 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 11: Subset XOR Sum
+ * Problem 11: Subset XOR Sum (LeetCode 1863)
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array nums, return the sum of all XOR totals for every subset of
+ * nums.
  * 
- * Output Format:
- * Sum of all subset XOR totals.
+ * Sample Input:
+ * 2
+ * 1 3
+ * Sample Output:
+ * Sum: 6 (Subsets: [], [1], [3], [1,3]. XORs: 0, 1, 3, 2. Sum: 6)
+ * 
+ * Sample Input:
+ * 3
+ * 5 1 6
+ * Sample Output:
+ * Sum: 28
  * 
  * Approach: Mathematical Observation
  * If we look at the kth bit, if at least one number has the kth bit set, then

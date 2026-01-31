@@ -3,14 +3,23 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 1: Single Number
+ * Problem 1: Single Number (LeetCode 136)
  * 
- * Input Format:
- * Number of elements n, then n integers where every element appears twice
- * except for one.
+ * Problem Statement:
+ * Given a non-empty array of integers nums, every element appears twice except
+ * for one. Find that single one.
  * 
- * Output Format:
- * The single number that appears only once.
+ * Sample Input:
+ * 3
+ * 2 2 1
+ * Sample Output:
+ * 1
+ * 
+ * Sample Input:
+ * 5
+ * 4 1 2 1 2
+ * Sample Output:
+ * 4
  * 
  * Approach: XOR Bitwise Operation
  * Property: a ^ a = 0 and a ^ 0 = a.

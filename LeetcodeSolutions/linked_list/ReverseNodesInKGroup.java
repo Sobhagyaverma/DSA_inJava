@@ -5,11 +5,25 @@ import java.util.Scanner;
 /**
  * Problem 15: Reverse Nodes in k-Group (LeetCode 25)
  * 
- * Input Format:
- * Number of nodes n, values, and k.
+ * Problem Statement:
+ * Given the head of a linked list, reverse the nodes of the list k at a time,
+ * and return the modified list.
+ * If the number of nodes is not a multiple of k left over nodes, in the end,
+ * should remain as it is.
  * 
- * Output Format:
- * Modified linked list.
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * 2
+ * Sample Output:
+ * 2 -> 1 -> 4 -> 3 -> 5 -> null
+ * 
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * 3
+ * Sample Output:
+ * 3 -> 2 -> 1 -> 4 -> 5 -> null
  * 
  * Approach: Iterative Reversal in Batches
  * 1. Count if at least k nodes exist.
@@ -17,10 +31,7 @@ import java.util.Scanner;
  * 3. Use recursion or an iterative loop to handle the next batch.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(1) (iterative) or O(n/k) (recursive)
- * 
- * Why Optimal:
- * It reverses the list in-place and handles the remainder correctly.
+ * Space Complexity: O(1) (iterative logic)
  */
 
 class ListNode {

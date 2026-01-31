@@ -5,11 +5,23 @@ import java.util.Scanner;
 /**
  * Problem 6: Odd Even Linked List (LeetCode 328)
  * 
- * Input Format:
- * Number of nodes n, followed by n values.
+ * Problem Statement:
+ * Given the head of a singly linked list, group all the nodes with odd indices
+ * together followed by the nodes with even indices, and return the reordered
+ * list.
+ * The first node is considered odd, the second node is even, and so on.
  * 
- * Output Format:
- * Linked list with odd indices first, then even indices.
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * Sample Output:
+ * 1 -> 3 -> 5 -> 2 -> 4 -> null
+ * 
+ * Sample Input:
+ * 2
+ * 1 2
+ * Sample Output:
+ * 1 -> 2 -> null
  * 
  * Approach: Pointer Manipulation
  * We maintain two separate lists: one for odd-indexed nodes and one for
@@ -19,9 +31,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It rearranges nodes in-place in a single pass.
  */
 
 class ListNode {

@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 10: Check if Array Can Be Partitioned into Two Equal XOR Subsets
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of integers, check if it can be partitioned into two subsets
+ * such that the XOR of elements in both subsets is equal.
  * 
- * Output Format:
- * Boolean (true/false).
+ * Sample Input:
+ * 4
+ * 1 2 3 0
+ * Sample Output:
+ * Possible: true (Subsets {1,2,3} and {0} both have XOR 0)
+ * 
+ * Sample Input:
+ * 3
+ * 1 2 4
+ * Sample Output:
+ * Possible: false (Total XOR is 7)
  * 
  * Approach: XOR logic
  * If we partition into two subsets A and B, then XOR(A) = XOR(B).

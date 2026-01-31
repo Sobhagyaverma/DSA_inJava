@@ -5,12 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 10: Delete Node in a Linked List (LeetCode 237)
  * 
- * Input Format:
- * List values and the value of the node to delete (guaranteed not to be the
- * tail).
+ * Problem Statement:
+ * Write a function to delete a node in a singly-linked list. You will not be
+ * given access to the head of the list,
+ * instead you will be given access to the node to be deleted directly.
+ * It is guaranteed that the node to be deleted is not a tail node in the list.
  * 
- * Output Format:
- * Modified linked list.
+ * Sample Input:
+ * List: 4-5-1-9, Node: 5
+ * Sample Output:
+ * List becomes: 4-1-9
+ * 
+ * Sample Input:
+ * List: 4-5-1-9, Node: 1
+ * Sample Output:
+ * List becomes: 4-5-9
  * 
  * Approach: Node Data Swap
  * Since we don't have access to the previous node, we copy the data from the
@@ -19,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(1)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It deletes the node in constant time without traversing the list.
  */
 
 class ListNode {

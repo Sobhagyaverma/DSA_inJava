@@ -5,12 +5,24 @@ import java.util.Scanner;
 /**
  * Problem 19: Add Two Numbers (LeetCode 2)
  * 
- * Input Format:
- * List 1 size and values (digits in reverse order).
- * List 2 size and values (digits in reverse order).
+ * Problem Statement:
+ * You are given two non-empty linked lists representing two non-negative
+ * integers.
+ * The digits are stored in reverse order, and each of their nodes contains a
+ * single digit.
+ * Add the two numbers and return the sum as a linked list.
  * 
- * Output Format:
- * Sum as a linked list (digits in reverse order).
+ * Sample Input:
+ * L1: 2 -> 4 -> 3
+ * L2: 5 -> 6 -> 4
+ * Sample Output:
+ * Sum: 7 -> 0 -> 8 (342 + 465 = 807)
+ * 
+ * Sample Input:
+ * L1: 0
+ * L2: 0
+ * Sample Output:
+ * Sum: 0
  * 
  * Approach: Elementary Addition with Carry
  * We traverse both lists simultaneously, adding corresponding digits plus
@@ -19,10 +31,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(max(m, n))
  * Space Complexity: O(max(m, n)) for the result list.
- * 
- * Why Optimal:
- * It performs addition in a single pass, handling different lengths and carry
- * correctly.
  */
 
 class ListNode {

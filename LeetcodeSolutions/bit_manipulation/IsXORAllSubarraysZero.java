@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 17: Check if XOR of All Subarrays Is Zero
  * 
- * Input Format:
- * n, array elements.
+ * Problem Statement:
+ * Given an array of integers, check if the XOR sum of all its subarrays' XOR
+ * totals is zero.
  * 
- * Output Format:
- * Boolean (true/false).
+ * Sample Input:
+ * 2
+ * 1 2
+ * Sample Output:
+ * Result: true
+ * 
+ * Sample Input:
+ * 3
+ * 1 2 3
+ * Sample Output:
+ * Result: false
  * 
  * Approach: Frequency of indices
  * Reuse XOR of All Subarrays logic (Problem 15).

@@ -3,14 +3,24 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 2: Single Number II
+ * Problem 2: Single Number II (LeetCode 137)
  * 
- * Input Format:
- * Number of elements n, then n integers where every element appears thrice
- * except for one.
+ * Problem Statement:
+ * Given an integer array nums where every element appears three times except
+ * for one, which appears exactly once.
+ * Find the single element and return it.
  * 
- * Output Format:
- * The single number that appears only once.
+ * Sample Input:
+ * 4
+ * 2 2 3 2
+ * Sample Output:
+ * Result: 3
+ * 
+ * Sample Input:
+ * 7
+ * 0 1 0 1 0 1 99
+ * Sample Output:
+ * Result: 99
  * 
  * Approach: Bit Counting
  * We count the set bits at each of the 32 bit positions. Bits that are part of

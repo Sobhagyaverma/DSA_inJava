@@ -5,12 +5,23 @@ import java.util.Scanner;
 /**
  * Problem 4: Linked List Cycle (LeetCode 141)
  * 
- * Input Format:
- * Number of nodes n, values, and the pos (index) nodes connects to (-1 for no
- * cycle).
+ * Problem Statement:
+ * Given head, the head of a linked list, determine if the linked list has a
+ * cycle in it.
  * 
- * Output Format:
- * Boolean indicating if a cycle exists.
+ * Sample Input:
+ * 4
+ * 3 2 0 -4
+ * 1 (cycle back to index 1)
+ * Sample Output:
+ * Cycle exists: true
+ * 
+ * Sample Input:
+ * 1
+ * 1
+ * -1
+ * Sample Output:
+ * Cycle exists: false
  * 
  * Approach: Floyd's Tortoise and Hare (Two Pointers)
  * We use two pointers, 'slow' and 'fast'. 'slow' moves one step at a time,
@@ -18,9 +29,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It detects the cycle without using extra space (like a HashSet).
  */
 
 class ListNode {
@@ -48,7 +56,6 @@ public class LinkedListCycle {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
         ListNode tail = null;
-        ListNode cycleTarget = null;
 
         ListNode[] nodes = new ListNode[n];
         for (int i = 0; i < n; i++) {

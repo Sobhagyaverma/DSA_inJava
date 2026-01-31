@@ -5,11 +5,23 @@ import java.util.Scanner;
 /**
  * Problem 16: Find Element Occurring Once When Others Appear K Times
  * 
- * Input Format:
- * n, array elements, then value k.
+ * Problem Statement:
+ * Given an array of integers where every element appears k times except for one
+ * element which appears exactly once. Find that single element.
  * 
- * Output Format:
- * The single element appearing once.
+ * Sample Input:
+ * 4
+ * 6 2 2 2
+ * 3
+ * Sample Output:
+ * Single Element: 6
+ * 
+ * Sample Input:
+ * 7
+ * 11 33 11 11 33 33 55
+ * 3
+ * Sample Output:
+ * Single Element: 55
  * 
  * Approach: Bit Counting
  * Count total set bits at each of the 32 positions.

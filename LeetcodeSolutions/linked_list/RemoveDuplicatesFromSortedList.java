@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 14: Remove Duplicates from Sorted List (LeetCode 83)
  * 
- * Input Format:
- * Number of nodes n, values (must be sorted).
+ * Problem Statement:
+ * Given the head of a sorted linked list, delete all duplicates such that each
+ * element appears only once. Return the linked list sorted as well.
  * 
- * Output Format:
- * Modified list without duplicates.
+ * Sample Input:
+ * 3
+ * 1 1 2
+ * Sample Output:
+ * 1 -> 2 -> null
+ * 
+ * Sample Input:
+ * 5
+ * 1 1 2 3 3
+ * Sample Output:
+ * 1 -> 2 -> 3 -> null
  * 
  * Approach: Single Pass
  * Since the list is sorted, duplicates are adjacent.
@@ -18,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It removes all duplicates in a single pass using constant extra space.
  */
 
 class ListNode {

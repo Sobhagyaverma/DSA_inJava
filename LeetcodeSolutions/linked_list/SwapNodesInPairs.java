@@ -5,20 +5,28 @@ import java.util.Scanner;
 /**
  * Problem 18: Swap Nodes in Pairs (LeetCode 24)
  * 
- * Input Format:
- * Number of nodes n, followed by n values.
+ * Problem Statement:
+ * Given a linked list, swap every two adjacent nodes and return its head.
+ * You must solve the problem without modifying the values in the list's nodes
+ * (i.e., only nodes themselves may be changed.)
  * 
- * Output Format:
- * Modified linked list with adjacent nodes swapped.
+ * Sample Input:
+ * 4
+ * 1 2 3 4
+ * Sample Output:
+ * 2 -> 1 -> 4 -> 3 -> null
+ * 
+ * Sample Input:
+ * 1
+ * 1
+ * Sample Output:
+ * 1 -> null
  * 
  * Approach: Iterative Pointer Manipulation
  * We use a dummy node and swap pairs iteratively by adjusting pointers.
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It swaps nodes in-place in a single pass using constant extra space.
  */
 
 class ListNode {

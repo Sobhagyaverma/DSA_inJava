@@ -5,11 +5,22 @@ import java.util.Scanner;
 /**
  * Problem 15: XOR of All Subarrays
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of integers, find the XOR of all XOR totals of all contiguous
+ * subarrays.
  * 
- * Output Format:
- * XOR sum of the XOR totals of all possible contiguous subarrays.
+ * Sample Input:
+ * 3
+ * 1 2 3
+ * Sample Output:
+ * Total XOR: 2 (Subarrays: [1], [2], [3], [1,2], [2,3], [1,2,3]. XORs:
+ * 1,2,3,3,1,0. Total: 1^2^3^3^1^0 = 2)
+ * 
+ * Sample Input:
+ * 2
+ * 1 2
+ * Sample Output:
+ * Total XOR: 0 (Subarrays: [1], [2], [1,2]. XORs: 1, 2, 3. Total: 1^2^3 = 0)
  * 
  * Approach: Bit frequency / Counting occurrences
  * An element at index i (0-indexed) appears in exactly (i+1) * (n-i) subarrays.

@@ -5,12 +5,25 @@ import java.util.Scanner;
 /**
  * Problem 3: Merge Two Sorted Lists (LeetCode 21)
  * 
- * Input Format:
- * List 1: size n1, values.
- * List 2: size n2, values.
+ * Problem Statement:
+ * You are given the heads of two sorted linked lists list1 and list2.
+ * Merge the two lists in a one sorted list. The list should be made by splicing
+ * together the nodes of the first two lists.
  * 
- * Output Format:
- * The merged sorted linked list.
+ * Sample Input:
+ * 3
+ * 1 2 4
+ * 3
+ * 1 3 4
+ * Sample Output:
+ * 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> null
+ * 
+ * Sample Input:
+ * 0
+ * 1
+ * 0
+ * Sample Output:
+ * 0 -> null
  * 
  * Approach: Iterative with Dummy Node
  * We use a dummy node to simplify the start of the list. We compare heads of
@@ -19,9 +32,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n1 + n2)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It merges in-place (reusing existing nodes) in a single pass.
  */
 
 class ListNode {

@@ -3,14 +3,25 @@ package bit_manipulation;
 import java.util.Scanner;
 
 /**
- * Problem 3: Two Single Numbers
+ * Problem 3: Two Single Numbers (LeetCode 260)
  * 
- * Input Format:
- * Number of elements n, then n integers where every element appears twice
- * except for two elements.
+ * Problem Statement:
+ * Given an integer array nums, in which exactly two elements appear only once
+ * and all the other
+ * elements appear exactly twice. Find the two elements that appear only once.
+ * You can return the answer in any order.
  * 
- * Output Format:
- * The two numbers that appear only once.
+ * Sample Input:
+ * 6
+ * 1 2 1 3 2 5
+ * Sample Output:
+ * Single Numbers: 3, 5
+ * 
+ * Sample Input:
+ * 4
+ * -1 0 -1 -2
+ * Sample Output:
+ * Single Numbers: 0, -2
  * 
  * Approach: XOR + Partitioning
  * 1. XOR all numbers. Result is x ^ y.

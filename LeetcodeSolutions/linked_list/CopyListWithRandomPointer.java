@@ -6,11 +6,21 @@ import java.util.Scanner;
 /**
  * Problem 9: Copy List with Random Pointer (LeetCode 138)
  * 
- * Input Format:
- * Number of nodes n, values and random indices for each node.
+ * Problem Statement:
+ * A linked list of length n is given such that each node contains an additional
+ * random pointer,
+ * which could point to any node in the list, or null. Construct a deep copy of
+ * the list.
  * 
- * Output Format:
- * Deep copy of the linked list.
+ * Sample Input:
+ * [[7,null],[13,0],[11,4],[10,2],[1,0]]
+ * Sample Output:
+ * [[7,null],[13,0],[11,4],[10,2],[1,0]]
+ * 
+ * Sample Input:
+ * [[1,1],[2,1]]
+ * Sample Output:
+ * [[1,1],[2,1]]
  * 
  * Approach: Iterative with HashMap
  * We use a HashMap to map original nodes to their copies.
@@ -19,9 +29,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n) for the map.
- * 
- * Why Optimal:
- * It handles arbitrary 'random' pointers in linear time.
  */
 
 class Node {

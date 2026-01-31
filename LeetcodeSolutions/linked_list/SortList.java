@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 17: Sort List (LeetCode 148)
  * 
- * Input Format:
- * Number of nodes n, followed by n values.
+ * Problem Statement:
+ * Given the head of a linked list, return the list after sorting it in
+ * ascending order.
  * 
- * Output Format:
- * Sorted linked list.
+ * Sample Input:
+ * 4
+ * 4 2 1 3
+ * Sample Output:
+ * 1 -> 2 -> 3 -> 4 -> null
+ * 
+ * Sample Input:
+ * 5
+ * -1 5 3 4 0
+ * Sample Output:
+ * -1 -> 0 -> 3 -> 4 -> 5 -> null
  * 
  * Approach: Merge Sort (Top-Down)
  * 1. Find the middle using slow/fast pointers.
@@ -18,10 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n log n)
  * Space Complexity: O(log n) for recursion stack.
- * 
- * Why Optimal:
- * Merge sort is the most efficient comparison-based sort for linked lists,
- * achieving O(n log n) time without requiring random access.
  */
 
 class ListNode {

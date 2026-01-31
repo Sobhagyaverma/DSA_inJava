@@ -5,11 +5,19 @@ import java.util.Scanner;
 /**
  * Problem 22: Turn Off the Rightmost Set Bit
  * 
- * Input Format:
- * An integer n.
+ * Problem Statement:
+ * Given an integer n, turn off its rightmost set bit using a bit manipulation
+ * trick.
  * 
- * Output Format:
- * The number after turning off the rightmost set bit.
+ * Sample Input:
+ * 10
+ * Sample Output:
+ * Result: 8 (1010 becomes 1000)
+ * 
+ * Sample Input:
+ * 7
+ * Sample Output:
+ * Result: 6 (0111 becomes 0110)
  * 
  * Approach: Bit Trick
  * n & (n-1) turns off the rightmost set bit.

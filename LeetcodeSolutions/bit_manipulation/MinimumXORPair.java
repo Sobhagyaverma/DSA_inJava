@@ -6,11 +6,21 @@ import java.util.Arrays;
 /**
  * Problem 13: Minimum XOR Pair
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of integers, find the minimum XOR value between any two
+ * distinct elements in the array.
  * 
- * Output Format:
- * Minimum XOR value between any two elements.
+ * Sample Input:
+ * 4
+ * 1 2 3 4
+ * Sample Output:
+ * Min XOR: 1 (2 ^ 3 = 1)
+ * 
+ * Sample Input:
+ * 3
+ * 9 5 3
+ * Sample Output:
+ * Min XOR: 6 (5 ^ 3 = 6)
  * 
  * Approach: Sorting
  * The minimum XOR pair values are always adjacent in a sorted array.

@@ -6,11 +6,21 @@ import java.util.Scanner;
 /**
  * Problem 21: Remove Zero Sum Consecutive Nodes (LeetCode 1171)
  * 
- * Input Format:
- * Number of nodes n, followed by n values.
+ * Problem Statement:
+ * Given the head of a linked list, we repeatedly delete consecutive sequences
+ * of nodes that sum to 0 until there are no such sequences.
  * 
- * Output Format:
- * Modified linked list with zero-sum consecutive nodes removed.
+ * Sample Input:
+ * 5
+ * 1 2 -3 3 1
+ * Sample Output:
+ * Modified List: 3 -> 1 -> null
+ * 
+ * Sample Input:
+ * 5
+ * 1 2 3 -3 -2
+ * Sample Output:
+ * Modified List: 1 -> null
  * 
  * Approach: Prefix Sum with HashMap
  * 1. Calculate prefix sums while traversing the list.
@@ -20,9 +30,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n) for the HashMap.
- * 
- * Why Optimal:
- * It removes all zero-sum sequences in linear time using prefix sum technique.
  */
 
 class ListNode {

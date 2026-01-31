@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 12: Maximum XOR Subarray
  * 
- * Input Format:
- * n, then n array elements.
+ * Problem Statement:
+ * Given an array of integers, find the maximum XOR subarray value in the given
+ * array.
  * 
- * Output Format:
- * Maximum XOR value of any contiguous subarray.
+ * Sample Input:
+ * 4
+ * 1 2 3 4
+ * Sample Output:
+ * Max XOR Subarray: 7 (3 ^ 4 = 7)
+ * 
+ * Sample Input:
+ * 3
+ * 8 1 2
+ * Sample Output:
+ * Max XOR Subarray: 11 (8 ^ 1 ^ 2 = 11)
  * 
  * Approach: Prefix XOR + Trie
  * XOR of subarray (i, j) is PrefixXOR[j] ^ PrefixXOR[i-1].

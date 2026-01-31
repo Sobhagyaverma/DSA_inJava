@@ -5,11 +5,21 @@ import java.util.Scanner;
 /**
  * Problem 1: Reverse Linked List (LeetCode 206)
  * 
- * Input Format:
- * Number of nodes n, followed by n node values.
+ * Problem Statement:
+ * Given the head of a singly linked list, reverse the list, and return the
+ * reversed list.
  * 
- * Output Format:
- * The reversed linked list: val1 -> val2 -> ... -> null
+ * Sample Input:
+ * 5
+ * 1 2 3 4 5
+ * Sample Output:
+ * 5 -> 4 -> 3 -> 2 -> 1 -> null
+ * 
+ * Sample Input:
+ * 2
+ * 1 2
+ * Sample Output:
+ * 2 -> 1 -> null
  * 
  * Approach: Iterative In-place Reversal
  * We use three pointers: prev, current, and nextNode.
@@ -18,9 +28,6 @@ import java.util.Scanner;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
- * Why Optimal:
- * It visits each node exactly once and uses a constant amount of extra space.
  */
 
 class ListNode {
